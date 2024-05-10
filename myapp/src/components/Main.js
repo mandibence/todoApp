@@ -42,8 +42,8 @@ export default function Main() {
     return (
         <div>
             <div className="newTodoContainer">
-                <input className="newTodoInput" placeholder="Add Todo..." onChange={handleChange} />
-                <button onClick={handleClick}>Create Todo</button>
+                <input className="newTodoInput" placeholder="type new todo here..." onChange={handleChange} />
+                <button className="newTodoButton" onClick={handleClick}>Create</button>
             </div>
             <div className="todoListContainer">
                 <ul>
