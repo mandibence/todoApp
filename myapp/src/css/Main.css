@@ -1,9 +1,10 @@
 .newTodoInput {
-    margin-right:20px;
-    padding-left:10px;
+    margin-right: 20px;
+    padding-left: 10px;
     border-color: gray;
     border-radius: 5px;
     border-style: solid;
+    font-size: 16px;
 }
 
 .newTodoButton {
@@ -44,17 +45,17 @@ ul {
 }
 
 .todoName {
-    font-size:25px;
-    margin-right:12px;
+    font-size: 25px;
+    margin-right: 12px;
 }
 
 .todoDeleteButton {
     margin-left: auto;
-    height:33px;
-    color:white;
-    font-size:16px;
-    font-weight:bold;
-    background-color:red;
+    height: 33px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: red;
     border-radius: 5px;
     border-style:  none;
 }

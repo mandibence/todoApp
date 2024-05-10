@@ -33,6 +33,12 @@ export default function Main() {
     }
     function handleClick() {
         dispatch(addNewTodo(newTodo))
+        setNewTodo(
+            {
+                id: "",
+                todoName: "",
+            }
+        )
     }
 
     function deleteTodo(id) {
@@ -42,8 +48,14 @@ export default function Main() {
     return (
         <div>
             <div className="newTodoContainer">
-                <input className="newTodoInput" placeholder="type new todo here..." onChange={handleChange} />
-                <button className="newTodoButton" onClick={handleClick}>Create</button>
+                <input className="newTodoInput"
+                    value={newTodo.todoName}
+                    placeholder="type new todo here..."
+                    onChange={handleChange} />
+                <button className="newTodoButton"
+                    onClick={handleClick}
+                    id="createButton">Create
+                </button>
             </div>
             <div className="todoListContainer">
                 <ul>
