@@ -11,10 +11,13 @@ export default function Main() {
     const todos = useSelector((state) => state.todoList)
 
     const todoListToRender = todos.map(todo =>
-    (<li>
-        {todo.todoName}
-        <button onClick={() => deleteTodo(todo.id)}>Delete</button>
-    </li>))
+    (<div className="todoElement">
+        <input type="checkbox" className="todoCheckbox"/>
+        <li className="todoName">
+            {todo.todoName}
+        </li> 
+        <button className="todoDeleteButton" onClick={() => deleteTodo(todo.id)}>Delete</button>
+    </div>))
 
     const [newTodo, setNewTodo] = React.useState({
         id: "",
@@ -42,9 +45,11 @@ export default function Main() {
                 <input className="newTodoInput" placeholder="Add Todo..." onChange={handleChange} />
                 <button onClick={handleClick}>Create Todo</button>
             </div>
-            <ul>
-                {todoListToRender}
-            </ul>
+            <div className="todoListContainer">
+                <ul>
+                    {todoListToRender}
+                </ul>
+            </div>          
         </div>
     )
 }

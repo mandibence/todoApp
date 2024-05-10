@@ -6,3 +6,34 @@ ul {
     display: flex;
     justify-content: center;
 }
+
+.todoListContainer {
+    display: flex;
+    justify-content: center;
+
+    border-color: gray;
+    border-style: solid;
+}
+
+.todoElement {
+    display: flex;
+    min-width: 400px;
+    margin-right: 40px;
+
+    border-color: gray;
+    border-style: solid;
+}
+
+.todoCheckbox {
+    margin-left: 0;
+}
+
+.todoName {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.todoDeleteButton {
+    margin-left: auto;
+    margin-right: 0;
+}
