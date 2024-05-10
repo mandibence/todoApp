@@ -1,7 +1,7 @@
 import React from "react"
-import "./css/Main.css"
+import "../css/Main.css"
 import { useSelector, useDispatch } from 'react-redux'
-import { addNewTodo, removeTodo } from './todoListSlice'
+import { addNewTodo, removeTodo } from '../redux/todoListSlice'
 import { v4 } from 'uuid'
 
 export default function Main() {
